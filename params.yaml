@@ -10,8 +10,8 @@ load_data:
   raw_dataset_csv: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/data/raw/winequality.csv
 
 split_data:
-  train_path: data/processed/train_winequality.csv
-  test_path: data/processed/test_winequality.csv
+  train_path: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/data/processed/train_winequality.csv
+  test_path: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/data/processed/test_winequality.csv
   test_size: 0.2
 
 estimators:

@@ -41,3 +41,8 @@ git remote add origin https://github.com/Riya20-shah/DVC_demo_winequality.git
 '''bash
 git push -u origin master
 '''
+
+
+'''bash
+dvc repro      ##when we run this command dvc will check the dvc.yaml file when we apply one by one stages 
+'''
