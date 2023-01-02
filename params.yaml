@@ -7,7 +7,7 @@ data_source:
   s3_source: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/data_given/winequality.csv
 
 load_data:
-  raw_dataset_csv: data/raw/winequality.csv
+  raw_dataset_csv: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/data/raw/winequality.csv
 
 split_data:
   train_path: data/processed/train_winequality.csv

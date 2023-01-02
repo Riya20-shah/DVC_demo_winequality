@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/params.yaml
+    deps:
+    - path: data_given/winequality.csv
+      md5: ccc8d3507eb151f53f760d36abdef888
+      size: 91998
+    - path: src/get_data.py
+      md5: c6e8d53e9abd1fb0d2eec810ac0becfc
+      size: 760
+    - path: src/load_data.py
+      md5: 3d64064cb1661fb4ba8aba930723da87
+      size: 789
+    outs:
+    - path: data/raw/winequality.csv
+      md5: d98e8f2eca228c11c4de1cc96866a54d
+      size: 91998

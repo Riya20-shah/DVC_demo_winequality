@@ -1,0 +1,9 @@
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/params.yaml
+    deps:
+    - src/get_data.py
+    - src/load_data.py
+    - data_given/winequality.csv
+    outs:
+    - data/raw/winequality.csv
