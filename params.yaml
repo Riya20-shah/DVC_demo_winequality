@@ -20,10 +20,10 @@ estimators:
        alpha: 0.88
        l1_ratio: 0.89
 
-model_dir: saved_models
+model_dir: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/saved_models
 
-#reports:
-#  params: report/params.json
-#  scores: report/scores.json
-#
+reports:
+  params: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/report/params.json
+  scores: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/report/scores.json
+
 #webapp_model_dir: prediction_service/model/model.joblib

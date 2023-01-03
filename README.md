@@ -46,3 +46,12 @@ git push -u origin master
 '''bash
 dvc repro      ##when we run this command dvc will check the dvc.yaml file when we apply one by one stages 
 '''
+
+'''bash
+dvc metrics show      # this command is use to check parameters of model ,  it featch the details from dvc.yml file metrics 
+'''
+
+
+'''bash
+dvc metrics diff      # this command show the difference in params ,  it featch the details from dvc.yml file metrics 
+'''

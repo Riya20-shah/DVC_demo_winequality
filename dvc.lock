@@ -32,3 +32,29 @@ stages:
     - path: data/processed/train_winequality.csv
       md5: 4bccf4d668cdc60115de42ba74d416ab
       size: 73633
+  train_and_evalution:
+    cmd: python3 src/train_and_evalution.py --config=/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/params.yaml
+    deps:
+    - path: data/processed/test_winequality.csv
+      md5: 01718da3bd6e206060ed00667ca1a389
+      size: 18510
+    - path: data/processed/train_winequality.csv
+      md5: 4bccf4d668cdc60115de42ba74d416ab
+      size: 73633
+    - path: src/train_and_evalution.py
+      md5: f8df5a876d4f30cde63cce910a2788e3
+      size: 2763
+    params:
+      params.yaml:
+        estimators.ElasticNet.params.alpha: 0.88
+        estimators.ElasticNet.params.l1_ratio: 0.89
+    outs:
+    - path: report/params.json
+      md5: 0568f34313ba7c5e55128b75dbcbee5c
+      size: 43
+    - path: report/scores.json
+      md5: ac89e037063ee307b6d23c8ef0583610
+      size: 96
+    - path: saved_models/model.joblib
+      md5: c49c2dcd8a7b284764e760fd2c5baf4a
+      size: 1215
