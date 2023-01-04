@@ -1,57 +1,82 @@
 create virtual env
-'''bash
+```bash
 conda create -n wineq python=3.10 -y
-'''
+```
 activate env 
-'''bash
+```bash
 conda activate wineq
-'''
+```
 created requirement.txt file
 
 install the requirements
-'''bash
+```bash
 pip install -r requiements.txt
-'''
+```
 create directiorary for simple templates project structure 
 
 download the dataset of wineuality 
-'''bash
+```bash
 git init
-'''
+```
 
-'''bash
+```bash
 dvc init
-'''
+```
 
-'''bash
+```bash
 dvc add data_given/winequality.csv
-'''
+```
 
-'''bash
+```bash
 git add .
-'''
-'''bash
+```
+
+```bash
 git commit -m "First commit "
-'''
+```
 
-'''bash
+```bash
 git remote add origin https://github.com/Riya20-shah/DVC_demo_winequality.git
-'''
+```
 
-'''bash
+```bash
 git push -u origin master
-'''
+```
 
+when we run this command dvc will check the dvc.yaml file when we apply one by one stages
+its start tracking of our data 
+```bash
+dvc repro      ## 
+```
+this command is use to check parameters of model ,  it featch the details from dvc.yml file metrics 
+```bash
+dvc metrics show      # 
+```
 
-'''bash
-dvc repro      ##when we run this command dvc will check the dvc.yaml file when we apply one by one stages 
-'''
+this command show the difference in params ,  it featch the details from dvc.yml file metrics
+```bash
+dvc metrics diff      #  
+```
 
-'''bash
-dvc metrics show      # this command is use to check parameters of model ,  it featch the details from dvc.yml file metrics 
-'''
+tox commands -  
+```bash
+tox
+```
 
+for rebulding -
+```bash
+tox -r
+```
 
-'''bash
-dvc metrics diff      # this command show the difference in params ,  it featch the details from dvc.yml file metrics 
-'''
+pytest command 
+```bash
+pytest -v
+```
+
+setup commands -
+```bash
+pip install -e .
+```
+
+build your own package commands -
+python3 setup.py 
