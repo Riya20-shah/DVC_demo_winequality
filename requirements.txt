@@ -9,3 +9,4 @@ pandas
 sklearn
 pytest   # for testing
 tox
+flake8
