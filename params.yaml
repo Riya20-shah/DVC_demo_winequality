@@ -28,4 +28,4 @@ reports:
   params: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/report/params.json
   scores: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/report/scores.json
 
-#webapp_model_dir: prediction_service/model/model.joblib
+webapp_model_dir: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/prediction_services/updated_model/model.joblib

@@ -10,3 +10,5 @@ sklearn
 pytest   # for testing
 tox
 flake8
+flask
+gunicorn
