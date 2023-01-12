@@ -1,7 +1,7 @@
 import json
 import logging
 import os
-import joblib
+# import joblib
 import pytest
 from prediction_services.prediction import form_response, api_response
 import prediction_services
