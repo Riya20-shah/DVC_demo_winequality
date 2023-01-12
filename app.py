@@ -5,7 +5,6 @@ import joblib
 import numpy as np
 from prediction_services import prediction
 
-params_path = "/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/params.yaml"
 webapp_root = "/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/webapp"
 
 static_dir = os.path.join(webapp_root , "static")
