@@ -35,7 +35,7 @@ def predict(data):
         return "Unexpected result"
 
 
-def get_schema(schema_path = schema_path):
+def get_schema(schema_path=schema_path):
     with open(schema_path) as json_file:
         schema = json.load(json_file)
     return schema
