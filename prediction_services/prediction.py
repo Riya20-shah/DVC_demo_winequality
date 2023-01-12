@@ -26,10 +26,8 @@ def predict(data):
     model_dir_path = config["webapp_model_dir"]
     model = joblib.load(model_dir_path)
     prediction = model.predict(data).tolist()[0]
-    print(prediction)
-
     try:
-        if 3 <= prediction <=8:
+        if 3 <= prediction <= 8:
             return prediction
         else:
             raise NotInRange
@@ -60,18 +58,20 @@ def validate_input(dict_request):
 
     return True
 
-def form_respons(dict_request):
+def form_response(dict_request):
     if validate_input(dict_request):
         data = dict_request.values()
-        data = [list(map(float , data))]
+        data = [list(map(float, data))]
         response = predict(data)
         return response
+
 def api_response(dict_request):
     try:
         if validate_input(dict_request):
             data = np.array([list(dict_request.json.values())])
             response = predict(data)
             response = {"response": response}
+            print("response =",response)
             return response
     except Exception as e:
         response = {"the_expected_range":get_schema(),"response":str(e)}
