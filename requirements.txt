@@ -6,7 +6,7 @@
 dvc
 dvc[gdrive]
 pandas
-sklearn
+scikit-learn
 pytest   # for testing
 joblib
 tox
