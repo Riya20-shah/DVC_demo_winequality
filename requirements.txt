@@ -8,6 +8,7 @@ dvc[gdrive]
 pandas
 sklearn
 pytest   # for testing
+joblib
 tox
 flake8
 flask

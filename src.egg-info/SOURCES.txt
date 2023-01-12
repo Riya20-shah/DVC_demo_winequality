@@ -1,5 +1,7 @@
 README.md
 setup.py
+prediction_services/__init__.py
+prediction_services/prediction.py
 src/__init__.py
 src/get_data.py
 src/load_data.py
