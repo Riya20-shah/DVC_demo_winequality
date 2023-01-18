@@ -26,10 +26,18 @@ stages:
     params:
       - estimators.ElasticNet.params.alpha
       - estimators.ElasticNet.params.l1_ratio
-    metrics:
-    - report/params.json:
-          cache: false
-    - report/scores.json:
-          cache: false
-    outs:
-    - saved_models/model.joblib
+#    metrics:
+#    - report/params.json:
+#          cache: false
+#    - report/scores.json:
+#          cache: false
+#    outs:
+#    - saved_models/model.joblib
+
+
+  log_production_model:
+    cmd: python3 src/log_production_model.py --config=/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/params.yaml
+    deps:
+      - src/log_production_model.py
+
+
