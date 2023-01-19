@@ -21,8 +21,8 @@ estimators:
 #       l1_ratio: 0.89
 #       alpha: 0.9
 #       l1_ratio: 0.4
-       alpha: 0.6
-       l1_ratio: 0.24
+       alpha: 0.7
+       l1_ratio: 0.20
 
 model_dir: /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/saved_models
 

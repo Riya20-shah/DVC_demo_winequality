@@ -52,5 +52,5 @@ stages:
     cmd: python3 src/log_production_model.py --config=/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/params.yaml
     deps:
     - path: src/log_production_model.py
-      md5: d41d8cd98f00b204e9800998ecf8427e
-      size: 0
+      md5: d5afbb29276b2bd75c8146717b37f46c
+      size: 1635

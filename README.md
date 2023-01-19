@@ -87,6 +87,5 @@ python3 setup.py
 mlflow remote server commands - 
 
 ```bash
-mlflow server \ --backend-store-uri sqlite:///mlflow.db \ --default-artifact-root /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/artifacts
-/home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/artifacts \ --host 0.0.0.0 -p 1234
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /home/scaledge-riya/Desktop/MLops_demo_projects/wine_predicton_DVC/artifacts --host 0.0.0.0 -p 1234
 ```
